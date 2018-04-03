@@ -13,5 +13,9 @@ public class Carro {
 	public void setTetoSolar(TetoSolar tetoSolar) {
 		this.tetoSolar = tetoSolar;
 	}
+
+	
+	
+	
 	
 }

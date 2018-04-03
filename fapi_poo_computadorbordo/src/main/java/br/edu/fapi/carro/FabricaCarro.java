@@ -17,11 +17,11 @@ public class FabricaCarro {
 		String possuiTetoSolar = scanner.nextLine();
 		if("sim".equalsIgnoreCase(possuiTetoSolar)) {
 			FabricaTetoSolar fabricaTetoSolar = new FabricaTetoSolar();
-			double altura = 0.0; //scanner.nextDouble();
-			double largura = 0.0;
-			double espessura = 0.0;
-			String material = ""; //scanner.nextLine();
-			String cor = "";
+			double altura = scanner.nextDouble();
+			double largura = scanner.nextDouble();
+			double espessura = scanner.nextDouble();
+			String material = scanner.nextLine();
+			String cor = scanner.nextLine();
 			TetoSolar tetoSolar = fabricaTetoSolar.fabricarTetoSolar(altura, largura, espessura, material, cor);
 			
 			carro.setTetoSolar(tetoSolar);
